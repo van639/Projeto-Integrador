@@ -11,5 +11,5 @@ Repositório para armazenar um site de doações para instituições não govern
 | Front-end | Back-end | Framework| Banco de Dados |
 |-----------|----------|-----------|----------|
 |Html| C# | .Net  | SQL Server|
-|CSS||    | #Net  |           |
+|CSS|    | #Net  |           |
 |JavaScript||     |           |
