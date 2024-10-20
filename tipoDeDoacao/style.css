@@ -1,0 +1,194 @@
+main{
+    height: 1211px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#titulo{
+    font-size: 48px;
+    color: #8915CE;
+    text-align: center;
+    width: 100%;
+    width: 1026px;
+    z-index: 1;
+    margin-top: 20px;
+}
+/* ESQUERDO MAIN */
+#container-left-conteudo{
+    width: 62%;
+    height: inherit;
+    /* background-color: aqua; */
+    flex-direction: column;
+    padding: 50px;
+}
+
+h3{
+  margin-top: 80px;
+  text-align: center;
+  font-size: 25px;
+  color: #8915CE;
+}
+
+.container-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 265px;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.card{
+  height: 263px;
+  width: 246px;
+  border-radius: 20px;
+  box-shadow: 7px 5px 2px 1px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: 10px;
+  background-color: #F9F4F4;
+  font-size: 25px;
+  color: #8915CE;
+}
+
+.card:hover{
+  box-shadow:0px 2px 2px 1px rgba(0, 0, 0, 0.4);
+  transition: 500ms;
+  cursor: pointer; 
+  color: rgb(98, 7, 112);
+  text-shadow: 0px 0px 10px #8915CE,
+               0px 0px 20px #a56fc4,
+               0px 0px 30px #9c5ac2;
+}
+/* FIM ESQUERO MAIN */
+/* DIREITO MAIN */
+#container-right-conteudo{
+    width: 38%;
+    height: inherit;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end; 
+}
+#img-ong{
+  height: 130px;
+  width: 189px;
+  position: relative;
+  z-index: 1;
+  margin-top: -300px;
+  margin-right: 120px;
+}
+#txt-ball-ong{
+  margin-right: 100px;
+  margin-top: 20px;
+  font-size: 28px;
+  text-align: center;
+}
+#container-txt-doacao-anonima{
+  margin-right: 80px;
+  margin-top: 150px;
+  width: 95%;
+  height: 496px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#container-txt-doacao-anonima p{
+  text-align: center;
+  font-size: 24px;
+}
+
+#container-txt-doacao-anonima .card{
+  width: 330px;
+}
+
+#container-txt-doacao-anonima .card:hover{
+  box-shadow: 7px 5px 2px 1px rgba(0, 0, 0, 0.4);
+  cursor: unset;
+}
+
+#btn-doacao-anonima{
+  width: 288px;
+  height: 58px;
+  background-color: #8915CE;
+  color: white;
+  text-align: center;
+  border-radius: 22px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 18px;
+}
+
+#btn-doacao-anonima:hover{
+  cursor:pointer;
+  background-color: #a56fc4;
+}
+/* FIM MAIN */
+/* RODAPÉ */
+footer{
+    min-height: 222px;
+    height: auto;
+    width: 100%;
+    background-color: var(--secundary);
+    padding: 50px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #container-redes-sociais{
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-self: flex-start;
+    justify-content: space-between;
+  }
+
+  #container-rodape{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+  }
+
+  #container-rodape #btnDoar{
+    background-color: var(--primary);
+  }
+
+  #txt-direitos{
+    color: var(--fundo);
+  }
+
+  @media (max-width: 999px) {
+    #container-rodape{
+      flex-direction: column;
+      height: 150px;
+      margin-top: -50px;
+    }
+
+    #container-redes-sociais{
+      width: 90%;
+    }
+    #img-logo{
+      width: 200px;
+    }
+    #container-redes-sociais img{
+      height: 40px;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    #txt-direitos{
+      margin-bottom: 30px;
+    }
+  }

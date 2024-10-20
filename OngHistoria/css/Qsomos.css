@@ -1,0 +1,194 @@
+main{
+    height: auto;
+    width: 100%;
+    
+}
+
+#container-titulo-ong{
+width: 100%;
+display: flex;
+flex-direction: row;
+}
+
+#container-titulo-ong img{
+    background-size: cover;
+    height: inherit;
+    width: 20%;
+    margin: 20px 55px;
+}  
+#container-titulo-ong h1{
+    font-family: "Karla", "sans-serif";
+    font-size: 30px;
+    color: #343434;
+    text-align: initial; 
+    margin-top: 60px;
+    width: 703px;
+    height: 75px;
+    
+}
+
+#container-titulo-ong p{
+    font-family: "Karla", "sans-serif";
+    font-size: 15px;
+    color: #343434;
+    margin-left: 30px;
+    margin-top: 230px;
+
+}
+#container-titulo-ong h5{
+    font-family: "karla", "sans-serif";
+    font-size: 15px;
+    color: #343434;
+    margin-left: -680px;
+    margin-top: 150px;
+    
+}
+
+#container-quem-somos{
+    height: 334px;
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    color: #000;
+    text-align:start;
+    font-size: 1.2rem;
+    font-family: "Karla", sans-serif;
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+#container-quem-somos h1{
+     font-family: "Karla", "sans_serif";
+     font-size: 25px;
+     color: blueviolet;    
+     
+}
+
+.quadrado {
+  width: 700px;
+  height: 230px;
+  border-radius: 5px;
+  background: #F2F2F8;
+  box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2); 
+  margin: auto;
+}
+
+#container-quem-somos h5{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 50px;
+    text-align: center;
+    line-height: 1.5;
+    word-break: break-word;
+}
+
+#container-NossoProposito {
+    min-height: 483px;
+    width: 100%;
+    margin: auto;
+    /* margin-top: 75px; */
+    color: #000;
+    text-align:start;
+    font-size: 1.2rem;
+    font-family: "Karla", sans-serif;
+    line-height: 1.5rem;
+    background-color: var(--secundary);
+    padding: 30px;
+
+  }
+  
+  #container-NossoProposito h2 /* h2 é o quem somsos-alterar */
+  {
+    font-size: 35px;
+    color: var(--fundo);
+    text-align: center;
+    font-weight: 700;
+  }
+  
+  .card-nosso-proposito {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .proposito {
+    width: 350px;
+    height: 230px;
+    border-radius: 5px;
+    background: #F2F2F8;
+    box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .proposito h3
+  {
+    color: var(--secundary);
+    text-align: center;
+    margin-top: 35px;
+  }
+  
+  .proposito h5 
+  { 
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 1.5;
+    display: block;
+  }
+
+  #sectiun{
+    margin-top: -10px;
+  }
+
+  /*  FOOTER */
+
+  footer{
+    min-height: 222px;
+    height: auto;
+    width: 100%;
+    background-color: var(--secundary);
+    padding: 50px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #container-rodape{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+  }
+  
+  #container-final{
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-self: flex-start;
+    justify-content: space-between;
+  }
+  
+  #container-final img  
+  {
+    justify-content: center;
+    margin-left: 435px;
+  }
+  
+  #container-rodape #btnDoar{
+    background-color: var(--primary);
+  }
+  
+  #txt-direitos{
+    color: var(--fundo);
+  }
+
+  /* --------------- */
+
+
