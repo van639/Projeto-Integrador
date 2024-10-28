@@ -88,10 +88,11 @@ label input{
     font-size: 16px;
     border: 0;
     box-shadow: 2px 2px 2px 1px rgba(55, 55, 55, 0.4);
+    background-color: #fff;
 }
   
 #txt-desc{
-    height: 260px;
+    height: 160px;
     border-radius: 10px;
     padding: 5px;
     padding-left: 15px;
