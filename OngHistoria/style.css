@@ -45,7 +45,7 @@ flex-direction: row;
 }
 
 #container-quem-somos{
-    height: 334px;
+    height: 700px;
     width: 90%;
     margin: auto;
     margin-top: 15px;
@@ -65,6 +65,7 @@ flex-direction: row;
      font-family: "Karla", "sans_serif";
      font-size: 25px;
      color: blueviolet;    
+     margin-top: 50px;
      
 }
 
@@ -75,7 +76,30 @@ flex-direction: row;
   background: #F2F2F8;
   box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2); 
   margin: auto;
+  margin-top: 30px;
 }
+
+.link{
+  width: 700px;
+  height: 20px;
+  margin-top: 30px;
+  border-radius: 5px;
+  background-color: #F2F2F8;
+  box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2); 
+   
+}
+
+button{
+  font-family: "Karla", "sans_serif";
+  width: 400px;
+  height: 50px;
+  border-radius: 40px;
+  background-color: blueviolet ;
+  color: white;
+  font-size: 30px ;
+  margin-top: -150px;
+}
+
 
 #container-quem-somos h5{
     font-size: 16px;
@@ -87,7 +111,7 @@ flex-direction: row;
 }
 
 #container-NossoProposito {
-    min-height: 483px;
+    min-height: 553px;
     width: 100%;
     margin: auto;
     /* margin-top: 75px; */
@@ -117,8 +141,9 @@ flex-direction: row;
   }
   
   .proposito {
+    padding: 17px;
     width: 350px;
-    height: 230px;
+    height: 300px;
     border-radius: 5px;
     background: #F2F2F8;
     box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.2);
@@ -133,17 +158,38 @@ flex-direction: row;
   
   .proposito h5 
   { 
+   
     font-size: 16px;
     font-weight: 500;
     margin-top: 10px;
-    text-align: center;
+    text-align: justify;
     line-height: 1.5;
     display: block;
+    
   }
 
-  #sectiun{
-    margin-top: -10px;
+  section{
+    height: 500px;
+    margin-top: -80px;
+    height: auto;
+    text-align: center;
+    position: relative;
+    background-color: var(--secundary); 
   }
+
+  #End{
+    position: relative;
+    margin: auto;
+    margin-bottom: -50px;
+    font-weight: bold;
+    font-size: 30px;
+    color: blueviolet;    
+    margin-top: 50px;
+    /* background-color: #ffffff72; */
+    width: max-content;
+  }
+
+
 
   /*  FOOTER */
 

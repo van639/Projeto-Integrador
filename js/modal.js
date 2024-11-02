@@ -1,17 +1,16 @@
-const OpenModalBtn = document.querySelectorAll(".btn-querodoar");
-const SaibaMaisBtn = document.querySelectorAll(".btn-saibamais");
+const OpenModalBtn = document.getElementById("cadastro");
+const closeModalBtn = document.querySelector("#close-modal");
+const modal = document.querySelector("#modal");
+const fade = document.querySelector("#fade");
 
 
-OpenModalBtn.forEach((btn) =>
-  btn.addEventListener('click', (event) => {
-    window.location.replace("../tipoDeDoacao/index.html");
-  })
-);
+closeModalBtn.addEventListener("click",() => {
+    modal.style.display="none";
+    fade.style.display="none";
+});
 
-SaibaMaisBtn.forEach((btn) =>
-  btn.addEventListener('click', (event) => {
-    window.location.replace("../OngHistoria/quemsomos.html");
-  })
-);
-
+OpenModalBtn.addEventListener('click', () =>{
+    modal.style.display="flex";
+    fade.style.display="block";
+});
 
