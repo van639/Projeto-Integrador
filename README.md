@@ -5,7 +5,7 @@ Repositório para armazenar um site de doações para instituições não govern
 [Clique aqui para acessar o site](https://github.com/van639)
 
 ## 📙Documentação
-- [Documentação do projeto](https://github.com/van639)
+- [Documentação do projeto](https://drive.google.com/file/d/1XSIOfxFhzxJDGHfJsbFVSQ3ofPjWzrHi/view?usp=sharing)
 
 ## 🔤Linguagens 
 | Front-end | Back-end | Framework| Banco de Dados |
