@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Portal_do_Bem.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="pt">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal do Bem</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link href="assents/Style/menu.css" rel="stylesheet" />
+
+</head>
+<body>
+    <form runat="server">
+        <nav>
+            <a href="Default.aspx">
+                <div id="logo"></div>
+            </a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="cadastroDoador.aspx">Cadastro Doador</a></li>
+                <li><a href="cadastroONG.aspx">Cadastro ONG</a></li>
+                <li><a href="pageONGS.aspx">Lista de ONGs</a></li>
+                <li><a href="~/">Login</a></li>
+                <li><a href="ongs/pageONGS.html">
+                    <div id="btnDoar">Quero Doar</div>
+                </a></li>
+            </ul>
+        </nav>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <footer>
+                <div id="container-rodape">
+                    <div id="container-final">
+                        <img id="img-logo" src="assents/Img/logo.png" />
+                    </div>
+                    <a>
+                        <div id="btnDoar">Quero Doar</div>
+                    </a>
+                </div>
+                <div id="txt-direitos">
+                    <p>©Portal do Bem - All rights reserved</p>
+                </div>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

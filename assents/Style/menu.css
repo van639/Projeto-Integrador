@@ -1,0 +1,238 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Karla", sans-serif;
+}
+
+:root {
+    --primary: #00BCFB;
+    --secundary: #8E28CC;
+    --card: #F5E4FF;
+    --fundo: #FFFFFF;
+}
+
+body {
+    width: 100%;
+    flex-direction: column;
+}
+
+nav {
+    height: 184px;
+    width: inherit;
+    background-color: var(--primary);
+    padding: 62px 109px 47px 109px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+    nav #logo {
+        background: url(../Img/logo.png)no-repeat center center;
+        background-size: contain;
+        object-fit: cover;
+        height: 68px;
+        width: 309px;
+    }
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+    .nav-list li {
+        letter-spacing: 3px;
+        margin-left: 32px;
+        margin-top: 20px;
+    }
+
+        .nav-list li a {
+            color: var(--fundo);
+            text-align: center;
+            font-size: medium;
+            font-family: "Karla", sans-serif;
+        }
+
+            .nav-list li a:hover {
+                font-weight: bold;
+                border-bottom: 4px solid var(--secundary);
+                -webkit-text-stroke-width: 0.8px;
+                -webkit-text-stroke-color: rgba(241, 220, 220, 0.74);
+            }
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+    .mobile-menu div {
+        width: 32px;
+        height: 2px;
+        background: #fff;
+        margin: 8px;
+        transition: 0.3s;
+    }
+
+#btnDoar {
+    height: 60px;
+    width: 170px;
+    background-color: var(--secundary);
+    border-radius: 40px;
+    font-size: medium;
+    font-weight: 600;
+    font-family: "Karla", sans-serif;
+    color: var(--fundo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+    margin-top: -20px;
+    box-shadow: 2px 5px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+    #btnDoar:hover {
+        background-color: #963fc8;
+        box-shadow: 2px 9px 7px 1px rgba(0, 0, 0, 0.4);
+        cursor: pointer;
+    }
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        padding: 62px 9px 47px 60px;
+    }
+
+        nav #logo {
+            width: 150px;
+            height: 60px;
+            margin-left: -100px;
+        }
+
+    .nav-list {
+        position: absolute;
+        top: 20vh;
+        right: 0;
+        width: 50vw;
+        height: 80vh;
+        background: var(--primary);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+        .nav-list li {
+            margin-left: 0;
+            opacity: 0;
+        }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    #btnDoar {
+        margin-left: 0;
+    }
+}
+
+.nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+footer {
+    margin-top: 219px;
+    min-height: 222px;
+    height: auto;
+    width: 100%;
+    background-color: var(--secundary);
+    padding: 50px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container-rodape {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+#container-final {
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-self: flex-start;
+    justify-content: space-between;
+}
+
+    #container-final img {
+        justify-content: center;
+        margin-left: 435px;
+    }
+
+#container-rodape #btnDoar {
+    background-color: var(--primary);
+}
+
+#txt-direitos {
+    color: var(--fundo);
+}
+
+@media (max-width: 999px) {
+
+    #container-rodape {
+        flex-direction: column;
+        height: 150px;
+        margin-top: -50px;
+    }
+
+    #container-final {
+        width: 90%;
+    }
+
+    #img-logo {
+        width: 200px;
+    }
+
+    #container-final img {
+        margin-left: 90px;
+        height: 40px;
+    }
+
+    #txt-direitos {
+        margin-bottom: 30px;
+    }
+}
